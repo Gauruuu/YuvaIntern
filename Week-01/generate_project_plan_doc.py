@@ -513,7 +513,7 @@ def build_document():
 
     # Insert Figure 1
     add_image_box(
-        "figures/fig1_lifecycle_architecture.png",
+        "Week-01/figures/fig1_lifecycle_architecture.png",
         "Figure 1",
         "End-to-End Enterprise Data Science Lifecycle & MLOps Architecture for OmniChurn AI."
     )
@@ -560,7 +560,7 @@ def build_document():
 
     # Insert Figure 2
     add_image_box(
-        "figures/fig2_data_pipeline.png",
+        "Week-01/figures/fig2_data_pipeline.png",
         "Figure 2",
         "Systematic Data Preprocessing, Quality Validation & Feature Engineering Pipeline."
     )
@@ -658,7 +658,7 @@ def build_document():
 
     # Insert Figure 4
     add_image_box(
-        "figures/fig4_model_evaluation.png",
+        "Week-01/figures/fig4_model_evaluation.png",
         "Figure 4",
         "Model Evaluation Framework: Precision-Recall Benchmarks & Cost-Sensitive Expected Value Threshold Optimization."
     )
@@ -745,7 +745,7 @@ def build_document():
 
     # Insert Figure 3
     add_image_box(
-        "figures/fig3_timeline_gantt.png",
+        "Week-01/figures/fig3_timeline_gantt.png",
         "Figure 3",
         "Project Implementation Timeline & Sprint Workload Distribution Allocating 32.5 Total Engineering Hours."
     )
@@ -992,7 +992,7 @@ def build_document():
 
     # Insert Figure 5
     add_image_box(
-        "figures/fig5_risk_matrix.png",
+        "Week-01/figures/fig5_risk_matrix.png",
         "Figure 5",
         "Strategic Risk Assessment Heatmap & Mitigation Matrix Categorizing Technical & Operational Vulnerabilities."
     )
@@ -1139,12 +1139,12 @@ def build_document():
         r1.font.color.rgb = COLOR_MUTED
 
     # Save documents
-    docx_filename = "YuvaIntern_Week1_Data_Science_Project_Plan.docx"
+    docx_filename = "Week-01/YuvaIntern_Week1_Data_Science_Project_Plan.docx"
     doc.save(docx_filename)
     print(f"Primary document saved: {docx_filename}")
 
     # Also save a copy with exact prompt deliverable name
-    doc_copy_name = "Week1_Data_Science_Project_Plan_Strategy_Design.docx"
+    doc_copy_name = "Week-01/Week1_Data_Science_Project_Plan_Strategy_Design.docx"
     doc.save(doc_copy_name)
     print(f"Copy saved: {doc_copy_name}")
 

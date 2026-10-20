@@ -19,7 +19,7 @@ os.makedirs('Week-02/figures', exist_ok=True)
 # FIGURE 1: Systematic EDA Lifecycle & Operational Framework
 # ==============================================================================
 def create_fig1():
-    fig, ax = plt.subplots(figsize=(14, 8.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(14, 8.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 14)
@@ -117,7 +117,7 @@ def create_fig1():
                                     color="#64748B", lw=1.8, linestyle=':', zorder=5))
 
     plt.tight_layout()
-    plt.savefig('Week-02/figures/fig1_eda_lifecycle_framework.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-02/figures/fig1_eda_lifecycle_framework.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 2 Fig 1 generated.")
 
@@ -125,7 +125,7 @@ def create_fig1():
 # FIGURE 2: Missing Data Diagnosis & Imputation Decision Architecture
 # ==============================================================================
 def create_fig2():
-    fig, ax = plt.subplots(figsize=(13, 8.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 8.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 13)
@@ -243,7 +243,7 @@ def create_fig2():
             fontsize=8.2, color='#047857', ha='center')
 
     plt.tight_layout()
-    plt.savefig('Week-02/figures/fig2_missing_data_decision_tree.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-02/figures/fig2_missing_data_decision_tree.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 2 Fig 2 generated.")
 
@@ -251,7 +251,7 @@ def create_fig2():
 # FIGURE 3: Multi-Panel Exploratory Visual Showcase
 # ==============================================================================
 def create_fig3():
-    fig = plt.figure(figsize=(14, 8.5), dpi=300)
+    fig = plt.figure(figsize=(14, 8.5), dpi=150)
     fig.patch.set_facecolor('#FFFFFF')
 
     # 4 Subplots (2x2 grid)
@@ -349,7 +349,7 @@ def create_fig3():
     fig.suptitle("Figure 3: Publication-Grade Exploratory Visualization Archetypes\nDemonstrating Univariate, Bivariate, Correlation & Relational Analysis Formats",
                  fontsize=13, fontweight='bold', color='#0F172A', y=0.98)
 
-    plt.savefig('Week-02/figures/fig3_eda_visual_catalog_mockup.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-02/figures/fig3_eda_visual_catalog_mockup.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 2 Fig 3 generated.")
 
@@ -357,7 +357,7 @@ def create_fig3():
 # FIGURE 4: Outlier Detection & Anomaly Treatment Taxonomy
 # ==============================================================================
 def create_fig4():
-    fig, ax = plt.subplots(figsize=(13, 8), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 8), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 13)
@@ -440,7 +440,7 @@ def create_fig4():
             fontsize=8.2, color='#475569', ha='center')
 
     plt.tight_layout()
-    plt.savefig('Week-02/figures/fig4_outlier_detection_taxonomy.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-02/figures/fig4_outlier_detection_taxonomy.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 2 Fig 4 generated.")
 
@@ -448,7 +448,7 @@ def create_fig4():
 # FIGURE 5: EDA Timeline & Gantt Workload Distribution (32.5 Hours)
 # ==============================================================================
 def create_fig5():
-    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -495,7 +495,7 @@ def create_fig5():
     ax.legend(loc='lower right', frameon=True, facecolor='#FFFFFF', edgecolor='#CBD5E1', fontsize=9)
 
     plt.tight_layout()
-    plt.savefig('Week-02/figures/fig5_eda_timeline_gantt.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-02/figures/fig5_eda_timeline_gantt.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 2 Fig 5 generated.")
 

@@ -19,7 +19,7 @@ os.makedirs('Week-03/figures', exist_ok=True)
 # FIGURE 1: End-to-End ML Development & Validation Lifecycle
 # ==============================================================================
 def create_fig1():
-    fig, ax = plt.subplots(figsize=(14, 8.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(14, 8.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 14)
@@ -109,7 +109,7 @@ def create_fig1():
         ax.text(p["x"] + 0.2, 2.0, p["desc"], fontsize=8.2, color='#475569', va='center', zorder=3)
 
     plt.tight_layout()
-    plt.savefig('Week-03/figures/fig1_ml_development_lifecycle.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-03/figures/fig1_ml_development_lifecycle.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 3 Fig 1 generated.")
 
@@ -117,7 +117,7 @@ def create_fig1():
 # FIGURE 2: Model Tournament & Algorithmic Selection Matrix
 # ==============================================================================
 def create_fig2():
-    fig, ax = plt.subplots(figsize=(13, 8), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 8), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 13)
@@ -206,7 +206,7 @@ def create_fig2():
             fontsize=8.2, color='#475569', ha='center')
 
     plt.tight_layout()
-    plt.savefig('Week-03/figures/fig2_model_selection_tournament.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-03/figures/fig2_model_selection_tournament.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 3 Fig 2 generated.")
 
@@ -214,7 +214,7 @@ def create_fig2():
 # FIGURE 3: Optuna Bayesian Hyperparameter Optimization Architecture
 # ==============================================================================
 def create_fig3():
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6.5), dpi=300)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6.5), dpi=150)
     fig.patch.set_facecolor('#FFFFFF')
 
     # Subplot 1: Optuna Optimization Workflow Diagram
@@ -286,7 +286,7 @@ def create_fig3():
     plt.suptitle("Figure 3: Bayesian Hyperparameter Optimization Framework via Optuna",
                  fontsize=13, fontweight='bold', color='#0F172A', y=0.98)
     plt.tight_layout()
-    plt.savefig('Week-03/figures/fig3_hyperparameter_optuna_workflow.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-03/figures/fig3_hyperparameter_optuna_workflow.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 3 Fig 3 generated.")
 
@@ -294,7 +294,7 @@ def create_fig3():
 # FIGURE 4: Validation Strategy: Purged Group TimeSeries vs Naive K-Fold
 # ==============================================================================
 def create_fig4():
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(13, 7.5), dpi=300)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(13, 7.5), dpi=150)
     fig.patch.set_facecolor('#FFFFFF')
 
     # Top: Naive Shuffled K-Fold (Showing Data Leakage)
@@ -359,7 +359,7 @@ def create_fig4():
     plt.suptitle("Figure 4: Rigorous Temporal Cross-Validation vs Flawed Shuffled Splitting",
                  fontsize=13, fontweight='bold', color='#0F172A', y=0.98)
     plt.tight_layout()
-    plt.savefig('Week-03/figures/fig4_validation_strategy_timeline.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-03/figures/fig4_validation_strategy_timeline.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 3 Fig 4 generated.")
 
@@ -367,7 +367,7 @@ def create_fig4():
 # FIGURE 5: ML Implementation Timeline & Gantt Chart (32.5 Hours)
 # ==============================================================================
 def create_fig5():
-    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -414,7 +414,7 @@ def create_fig5():
     ax.legend(loc='lower right', frameon=True, facecolor='#FFFFFF', edgecolor='#CBD5E1', fontsize=9)
 
     plt.tight_layout()
-    plt.savefig('Week-03/figures/fig5_ml_timeline_gantt.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-03/figures/fig5_ml_timeline_gantt.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 3 Fig 5 generated.")
 

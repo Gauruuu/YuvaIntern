@@ -19,7 +19,7 @@ os.makedirs('Week-04/figures', exist_ok=True)
 # FIGURE 1: Executive KPI Dashboard Mock-up
 # ==============================================================================
 def create_fig1():
-    fig = plt.figure(figsize=(14, 8.5), dpi=300)
+    fig = plt.figure(figsize=(14, 8.5), dpi=150)
     fig.patch.set_facecolor('#FFFFFF')
 
     # Top Title
@@ -90,7 +90,7 @@ def create_fig1():
     ax_right.set_ylim(0, 37000)
     ax_right.grid(axis='y', linestyle=':', alpha=0.6)
 
-    plt.savefig('Week-04/figures/fig1_executive_kpi_dashboard_mockup.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-04/figures/fig1_executive_kpi_dashboard_mockup.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 4 Fig 1 generated.")
 
@@ -98,7 +98,7 @@ def create_fig1():
 # FIGURE 2: Behavioral Decay Trend Analysis (90 Days Before Churn)
 # ==============================================================================
 def create_fig2():
-    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -147,7 +147,7 @@ def create_fig2():
     ax.legend(loc='upper right', fontsize=8.5, frameon=True, facecolor='#FFFFFF')
 
     plt.tight_layout()
-    plt.savefig('Week-04/figures/fig2_behavioral_decay_trend_analysis.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-04/figures/fig2_behavioral_decay_trend_analysis.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 4 Fig 2 generated.")
 
@@ -155,7 +155,7 @@ def create_fig2():
 # FIGURE 3: Strategic Non-Technical Storytelling Framework
 # ==============================================================================
 def create_fig3():
-    fig, ax = plt.subplots(figsize=(14, 8), dpi=300)
+    fig, ax = plt.subplots(figsize=(14, 8), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 14)
@@ -224,7 +224,7 @@ def create_fig3():
             fontsize=8.2, color='#475569', ha='center')
 
     plt.tight_layout()
-    plt.savefig('Week-04/figures/fig3_non_technical_storytelling_framework.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-04/figures/fig3_non_technical_storytelling_framework.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 4 Fig 3 generated.")
 
@@ -232,7 +232,7 @@ def create_fig3():
 # FIGURE 4: Churn Risk Segmentation & Tailored Intervention Matrix
 # ==============================================================================
 def create_fig4():
-    fig, ax = plt.subplots(figsize=(13, 8), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 8), dpi=150)
     ax.set_facecolor('#FFFFFF')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -286,7 +286,7 @@ def create_fig4():
               fontsize=13, fontweight='bold', color='#0F172A', pad=18)
 
     plt.tight_layout()
-    plt.savefig('Week-04/figures/fig4_churn_risk_segmentation_matrix.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-04/figures/fig4_churn_risk_segmentation_matrix.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 4 Fig 4 generated.")
 
@@ -294,7 +294,7 @@ def create_fig4():
 # FIGURE 5: Week 4 Timeline & Gantt Workload (32.5 Hours)
 # ==============================================================================
 def create_fig5():
-    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -341,7 +341,7 @@ def create_fig5():
     ax.legend(loc='lower right', frameon=True, facecolor='#FFFFFF', edgecolor='#CBD5E1', fontsize=9)
 
     plt.tight_layout()
-    plt.savefig('Week-04/figures/fig5_week4_timeline_gantt.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-04/figures/fig5_week4_timeline_gantt.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Week 4 Fig 5 generated.")
 

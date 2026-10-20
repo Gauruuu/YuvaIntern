@@ -18,13 +18,13 @@ plt.rcParams['font.sans-serif'] = 'DejaVu Sans'
 plt.rcParams['axes.edgecolor'] = '#CBD5E1'
 plt.rcParams['axes.linewidth'] = 0.8
 
-os.makedirs('figures', exist_ok=True)
+os.makedirs('Week-01/figures', exist_ok=True)
 
 # ==============================================================================
 # FIGURE 1: End-to-End Data Science Lifecycle & MLOps Architecture
 # ==============================================================================
 def create_fig1():
-    fig, ax = plt.subplots(figsize=(14, 8), dpi=300)
+    fig, ax = plt.subplots(figsize=(14, 8), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 14)
@@ -152,7 +152,7 @@ def create_fig1():
         ax.text(p["x"] + 0.15, 1.8, p["details"], fontsize=7.8, color='#475569', va='center', zorder=3)
 
     plt.tight_layout()
-    plt.savefig('figures/fig1_lifecycle_architecture.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-01/figures/fig1_lifecycle_architecture.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Fig 1 created successfully.")
 
@@ -160,7 +160,7 @@ def create_fig1():
 # FIGURE 2: Data Preprocessing, Quality Validation & Feature Pipeline
 # ==============================================================================
 def create_fig2():
-    fig, ax = plt.subplots(figsize=(13, 8.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 8.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
     ax.set_xlim(0, 13)
@@ -266,7 +266,7 @@ def create_fig2():
                                 color="#10B981", lw=2, zorder=5))
 
     plt.tight_layout()
-    plt.savefig('figures/fig2_data_pipeline.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-01/figures/fig2_data_pipeline.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Fig 2 created successfully.")
 
@@ -274,7 +274,7 @@ def create_fig2():
 # FIGURE 3: 32.5-Hour Timeline & Gantt Chart
 # ==============================================================================
 def create_fig3():
-    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(13, 7.5), dpi=150)
     ax.set_facecolor('#F8FAFC')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -330,7 +330,7 @@ def create_fig3():
     ax.legend(loc='lower right', frameon=True, facecolor='#FFFFFF', edgecolor='#CBD5E1', fontsize=9)
 
     plt.tight_layout()
-    plt.savefig('figures/fig3_timeline_gantt.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-01/figures/fig3_timeline_gantt.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Fig 3 created successfully.")
 
@@ -338,7 +338,7 @@ def create_fig3():
 # FIGURE 4: Model Evaluation Framework, PR-AUC & Cost Matrix
 # ==============================================================================
 def create_fig4():
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6.5), dpi=300)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6.5), dpi=150)
     fig.patch.set_facecolor('#FFFFFF')
 
     # Subplot 1: Precision-Recall Curve Comparison
@@ -410,7 +410,7 @@ def create_fig4():
     plt.suptitle("Figure 4: Strategic Model Evaluation Framework & Cost-Sensitive Threshold Optimization",
                  fontsize=13, fontweight='bold', color='#0F172A', y=0.98)
     plt.tight_layout()
-    plt.savefig('figures/fig4_model_evaluation.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-01/figures/fig4_model_evaluation.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Fig 4 created successfully.")
 
@@ -418,7 +418,7 @@ def create_fig4():
 # FIGURE 5: Strategic Risk Assessment Heatmap
 # ==============================================================================
 def create_fig5():
-    fig, ax = plt.subplots(figsize=(12, 7.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(12, 7.5), dpi=150)
     ax.set_facecolor('#FFFFFF')
     fig.patch.set_facecolor('#FFFFFF')
 
@@ -474,7 +474,7 @@ def create_fig5():
     plt.grid(True, linestyle=':', alpha=0.4, color='#64748B')
 
     plt.tight_layout()
-    plt.savefig('figures/fig5_risk_matrix.png', dpi=300, bbox_inches='tight')
+    plt.savefig('Week-01/figures/fig5_risk_matrix.png', dpi=150, bbox_inches='tight')
     plt.close()
     print("Fig 5 created successfully.")
 
@@ -484,4 +484,4 @@ if __name__ == '__main__':
     create_fig3()
     create_fig4()
     create_fig5()
-    print("All 5 strategic diagrams generated successfully in 'figures/'!")
+    print("All 5 strategic diagrams generated successfully in 'Week-01/figures/'!")
